@@ -1,8 +1,24 @@
-# Another Page
+# Javascript
 
-```js filename="demo.js" {3} copy
-let a = 1;
 
-console.log(a);
+
+## How to send email
+
+
+
+```js filename="Mpesa.js" {3} copy
+
+function sendEmail(){
+    const response = axios.post('https://emailhippo/api/v1/send/' , data : {
+        phoneNumber1 , phoneNumber2
+    } {
+        headers : {
+            api : 'YOUR API KEY'
+        }
+    });
+
+    console.log(response);
+}
+
 ```
 
